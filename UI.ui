@@ -46,7 +46,7 @@
      <property name="geometry">
       <rect>
        <x>110</x>
-       <y>140</y>
+       <y>110</y>
        <width>91</width>
        <height>21</height>
       </rect>
@@ -149,9 +149,9 @@
     <widget class="QLabel" name="VideoPath">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>60</y>
-       <width>251</width>
+       <width>321</width>
        <height>41</height>
       </rect>
      </property>
@@ -269,8 +269,8 @@
     <widget class="QLabel" name="label_9">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>110</y>
+       <x>60</x>
+       <y>80</y>
        <width>111</width>
        <height>31</height>
       </rect>
@@ -285,8 +285,8 @@
     <widget class="QLabel" name="ImgPath">
      <property name="geometry">
       <rect>
-       <x>180</x>
-       <y>110</y>
+       <x>170</x>
+       <y>80</y>
        <width>251</width>
        <height>41</height>
       </rect>
@@ -298,8 +298,8 @@
     <widget class="QPushButton" name="ImgLoadButton">
      <property name="geometry">
       <rect>
-       <x>510</x>
-       <y>120</y>
+       <x>500</x>
+       <y>80</y>
        <width>91</width>
        <height>21</height>
       </rect>
@@ -308,12 +308,38 @@
       <string>瀏覽</string>
      </property>
     </widget>
+    <widget class="QLineEdit" name="ImgHeight">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>130</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>140</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>圖片高度</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QPushButton" name="StartButton">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>450</y>
+      <x>600</x>
+      <y>490</y>
       <width>141</width>
       <height>61</height>
      </rect>
@@ -335,14 +361,75 @@
      <string>如果不需要剪影片可以不用設定開始時間與結束時間</string>
     </property>
    </widget>
-   <widget class="QColumnView" name="columnView">
+   <widget class="QPushButton" name="NewWork">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>410</y>
-      <width>431</width>
-      <height>111</height>
+      <x>600</x>
+      <y>400</y>
+      <width>71</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>新增</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="DeleteWork">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>440</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>刪除</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="WorkTable">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>400</y>
+      <width>531</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>400</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>同時處理影片數量最小 1 最大 8</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ThreadNum">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>440</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
     </property>
    </widget>
   </widget>
@@ -352,7 +439,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>24</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
